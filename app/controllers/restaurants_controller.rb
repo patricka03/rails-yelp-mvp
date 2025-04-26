@@ -14,7 +14,6 @@ class RestaurantsController < ApplicationController
   def create
     @restaurant = Restaurant.new(strong_params)
     @restaurant.save
-    raise
   end
 
   private
