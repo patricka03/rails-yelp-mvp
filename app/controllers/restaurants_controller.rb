@@ -14,8 +14,9 @@ class RestaurantsController < ApplicationController
   def create
     @restaurant = Restaurant.new(strong_params)
     @restaurant.save
+    redirect_to restaurants_path
   end
-
+  
   private
 
   def strong_params
