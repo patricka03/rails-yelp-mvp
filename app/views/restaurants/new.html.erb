@@ -1,2 +1,11 @@
-<h1>Creat a new restaurant</h1>
-<%= render 'form', restaurant: @restaurant %>
+<div class="container my-5">
+  <div class="card">
+    <div class="card-body">
+      <h1 class="text-center">Create a New Restaurant</h1>
+      <%= render 'form', restaurant: @restaurant %>
+      <div class="mt-4 text-center">
+        <%= link_to 'Back to Home', restaurants_path, class: "btn btn-outline-primary" %>
+      </div>
+    </div>
+  </div>
+</div>

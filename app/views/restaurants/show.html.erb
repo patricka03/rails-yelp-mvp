@@ -11,9 +11,19 @@
     <div class="card-footer bg-light">
       <h3>Reviews:</h3>
       <ul class="list-group">
-        <li class="list-group-item">Brilliant food and service, highlighting the dumplings and noodles as exceptional - Rating: 5</li>
-        <li class="list-group-item">Friendly staff, nice and relaxing ambiance - Rating: 4</li>
+        <% @restaurant.reviews.each do |review| %>
+          <li class="list-group-item"> <%=review.content%> - Rating: <%=review.rating%></li>
+        <% end %>
       </ul>
+
+      <div class="mt-2">
+        <%= link_to 'Leave a Review', new_restaurant_review_path(@restaurant), class: "btn btn-primary" %>
+      </div>
+
+      <div class="mt-4 text-center">
+        <%= link_to 'Back to Home', restaurants_path, class: "btn btn-outline-primary" %>
+      </div>
     </div>
   </div>
+
 </div>

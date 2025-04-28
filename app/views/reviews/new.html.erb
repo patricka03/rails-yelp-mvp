@@ -1,0 +1,15 @@
+<div class="container my-5">
+  <div class="card">
+    <div class="card-body">
+      <h1 class="text-center">Write a review for <%= @restaurant.name%></h1>
+      <%= simple_form_for [@restaurant, @review] do |f| %>
+        <%= f.input :content %>
+        <%= f.input :rating %>
+        <%= f.submit "Submit review", class: "btn btn-primary" %>
+      <% end %>
+      <div class="mt-4 text-center">
+       <%= link_to 'Back to Home', restaurants_path, class: "btn btn-outline-primary" %>
+      </div>
+    </div>
+  </div>
+</div>

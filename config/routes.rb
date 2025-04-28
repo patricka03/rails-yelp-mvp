@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'reviews/new'
   get 'restaurants/index'
   get 'restaurants/create'
   get 'restaurants/new'

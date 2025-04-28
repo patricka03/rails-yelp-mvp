@@ -1,7 +1,17 @@
-<h1>List of all restaurants</h1>
+ <div class="container">
+  <div class="mt-4 text-center">
+    <h1>List of all restaurants</h1>
+  </div>
 
-<% @restaurants.each do |restaurant| %>
-  <h2><%=link_to restaurant.name, restaurant_path(restaurant)%></h2>
-<% end %>
+  <div class="card shadow">
+    <div class="card-header text-white">
+      <% @restaurants.each do |restaurant| %>
+        <h2><%=link_to restaurant.name, restaurant_path(restaurant)%></h2>
+      <% end %>
+      <div class="mt-4 text-center">
+        <%= link_to 'Add a new restaurant', new_restaurant_path(@restaurant), class: "btn btn-primary"%>
+      </div>
+    </div>
+  </div>
 
-<%= link_to 'Add a new restaurant', new_restaurant_path(@restaurant)%>
+</div>
