@@ -1,23 +1,23 @@
 # README
-Overview
+## Overview
 
 Rails Yelp MVP allows users to create, view, and manage restaurants while leaving reviews. Designed using Rails conventions, Bootstrap for styling, and structured with partials for maintainability.
 
-Tech Stack
+## Tech Stack
 Ruby on Rails – Backend framework
 PostgreSQL – Database management
 Bootstrap – Frontend styling
 ERB (Embedded Ruby) – Templating engine
 Git & GitHub – Version control
 
-Features
+## Features
 Create new restaurants with structured forms
 View detailed restaurant pages with reviews
 Responsive design using Bootstrap
 Clean navigation with a "Back to Home" button
 Rails conventions for optimized performance
 
-Setup Instructions
+## Setup Instructions
 Prerequisites:
 Ensure you have the following installed:
 Ruby >= 3.0
